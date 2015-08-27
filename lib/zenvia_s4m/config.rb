@@ -4,10 +4,10 @@ require 'singleton'
 module ZenviaS4m
 	class Config
 		include Singleton
-		@@timeout = @@code = @@account = nil
+		attr_accessor :timeout, :code, :account
 
 		def timeout 
-			@@timeout || 30
+			@timeout || 30
 		end
 	end
 end
