@@ -1,6 +1,7 @@
 require "zenvia_s4m/version"
 
 module ZenviaS4m
+
   def self.config 
   	Config.instance
   end
