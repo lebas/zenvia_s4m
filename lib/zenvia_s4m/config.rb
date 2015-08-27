@@ -1,8 +1,9 @@
 # coding: utf-8
+require 'singleton'
+
 module ZenviaS4m
-	include Singleton
-	
 	class Config
+		include Singleton
 		@@timeout = @@code = @@account = nil
 
 		def timeout 
