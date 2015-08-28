@@ -4,7 +4,7 @@ require 'singleton'
 module ZenviaS4m
 	class Config
 		include Singleton
-		attr_accessor :timeout, :code, :account, :url
+		attr_accessor :timeout, :code, :account, :url, :log
 
 		def timeout 
 			@timeout || 30

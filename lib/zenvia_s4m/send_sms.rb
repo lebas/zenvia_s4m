@@ -24,6 +24,8 @@ module ZenviaS4m
 		end
 
 		def send
+			puts @info_SMS if ZenviaS4m.config.log
+			puts  ZenviaS4m.config.url if  ZenviaS4m.config.log
 			@res = RestClient.post ZenviaS4m.config.url, @info_SMS
 		end
 
