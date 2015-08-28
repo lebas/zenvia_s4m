@@ -34,10 +34,10 @@ module ZenviaS4m
 			@res
 		end
 
-		def check_params
-			@params[:message] = @params[:message][0,150] unless @params[:message].nil?
-			@params[:phone]	= @params[:phone]	unless @params[:phone].nil?
-			@params[:sms_id] = @params[:sms_id] unless @pamars[:sms_id].nil?
-		end
+		#def check_params
+		#	@params[:message] = @params[:message][0,150] unless @params[:message].nil?
+		#	@params[:phone]	= @params[:phone]	unless @params[:phone].nil?
+		#	@params[:sms_id] = @params[:sms_id] unless @pamars[:sms_id].nil?
+		#end
 	end
 end
