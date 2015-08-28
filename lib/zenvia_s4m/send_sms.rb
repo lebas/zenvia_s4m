@@ -6,6 +6,7 @@ module ZenviaS4m
 		def initialize(params)
 			@params = params
 			@res = nil
+			puts @params if ZenviaS4m.config.log
 			#self.check_params
       @info_SMS =  { 
        	account: ZenviaS4m.config.account, 
