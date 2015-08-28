@@ -9,16 +9,14 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'zenvia_s4m'
+    # zenvia SMS 
+    gem 'zenvia_s4m', '0.3', git: "git://github.com/lebas/zenvia_s4m.git"
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install zenvia_s4m
 
 In app/config/application.rb :
 
