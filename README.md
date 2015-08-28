@@ -20,9 +20,24 @@ Or install it yourself as:
 
     $ gem install zenvia_s4m
 
+In app/config/application.rb :
+
+```ruby    
+    ZenviaS4m::configure do |config|
+        config.account  = 'xxxxxxxxxx.xxx'
+        config.code     = 'mycode'
+        config.url      = 'http://www.zenvia360.com.br/GatewayIntegration/msgSms.do'
+        config.log      = false
+    end
+```
+
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+    list = { phone: '5521988887777', message: 'Bazinga', sms_id: '12333'}
+    zen = ZenviaS4m::SendSms.new(list).send
+    puts zen 
+```
 
 ## Development
 
