@@ -8,8 +8,8 @@ module ZenviaS4m
 		def initialize(params)
 			@params = params
 			@res = nil
-			self.check_params
-       @info_SMS =  { 
+			#self.check_params
+      @info_SMS =  { 
        	account: ZenviaS4m.config.account, 
        	code: ZenviaS4m.config.code, 
        	dispatch: 'send', 
