@@ -3,8 +3,6 @@ module ZenviaS4m
 	require 'rest-client'
 
 	class SendSms
-		@URL_WEBSERVICE = "http://www.zenvia360.com.br/GatewayIntegration/msgSms.do"
-
 		def initialize(params)
 			@params = params
 			@res = nil
@@ -26,7 +24,7 @@ module ZenviaS4m
 		end
 
 		def send
-			@res = RestClient.post @URL_WEBSERVICE, @info_SMS
+			@res = RestClient.post ZenviaS4m.config.url, @info_SMS
 		end
 
 		def return_codeSMS
