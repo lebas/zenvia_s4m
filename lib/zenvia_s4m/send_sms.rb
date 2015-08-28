@@ -14,7 +14,7 @@ module ZenviaS4m
        	code: ZenviaS4m.config.code, 
        	dispatch: 'send', 
        	to: @params[:phone], 
-       	msg: @pamars[:message], 
+       	msg: @params[:message], 
        	id: @params[:sms_id], 
        	callbackOption: 1 
       }
