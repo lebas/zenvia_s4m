@@ -7,7 +7,6 @@ module ZenviaS4m
 			@params = params
 			@res = nil
 			puts @params if ZenviaS4m.config.log
-			#self.check_params
       @info_SMS =  { 
        	account: ZenviaS4m.config.account, 
        	code: ZenviaS4m.config.code, 
@@ -33,11 +32,5 @@ module ZenviaS4m
 		def return_codeSMS
 			@res
 		end
-
-		#def check_params
-		#	@params[:message] = @params[:message][0,150] unless @params[:message].nil?
-		#	@params[:phone]	= @params[:phone]	unless @params[:phone].nil?
-		#	@params[:sms_id] = @params[:sms_id] unless @pamars[:sms_id].nil?
-		#end
 	end
 end

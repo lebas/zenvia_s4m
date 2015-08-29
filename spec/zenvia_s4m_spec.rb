@@ -5,27 +5,20 @@ describe ZenviaS4m do
     expect(ZenviaS4m::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
-  end
-
 	it 'has a account' do 
 		expect(true).to ZenviaS4m::account   
 	end
 
 	it 'has a code' do
-		#expect(true).to
+		expect(true).to ZenviaS4m::code 
 	end
   
-  it 'has a message' do 
-  	#expect(true).to
+  it 'has a url webservice' do 
+    expect(true).to ZenviaS4m::url
   end
 
-  it 'has a phone number' do 
-  	#expect(true).to
-  end
-
-  it 'has a sms id' do
-  	#expect(true).to
+  it 'has a message, phone number and  sms id' do
+  	zen = ZenviaS4m::SendSms.new({ phone: '5521988887777', message: 'Bazinga', sms_id: '12333'})
+    expect(zen).to be_valid
   end
 end

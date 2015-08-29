@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
     # zenvia SMS 
-    gem 'zenvia_s4m', '0.3', git: "git://github.com/lebas/zenvia_s4m.git"
+    gem 'zenvia_s4m', '0.5', git: "git://github.com/lebas/zenvia_s4m.git"
 ```
 
 And then execute:
