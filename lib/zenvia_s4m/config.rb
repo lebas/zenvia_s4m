@@ -4,7 +4,6 @@ require 'singleton'
 module ZenviaS4m
 	class Config
 		include Singleton
-		attr_accessor:code, :account, :url, :log
-
+		attr_accessor:code, :account, :url, :log, :from
 	end
 end

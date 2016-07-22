@@ -10,6 +10,7 @@ module ZenviaS4m
       @info_SMS =  { 
        	account: ZenviaS4m.config.account, 
        	code: ZenviaS4m.config.code, 
+       	from: ZenviaS4m.config.from,
        	dispatch: 'send', 
        	to: @params[:phone], 
        	msg: @params[:message], 

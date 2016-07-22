@@ -24,6 +24,7 @@ In app/config/application.rb :
     ZenviaS4m::configure do |config|
         config.account  = 'xxxxxxxxxx.xxx'
         config.code     = 'mycode'
+        config.from     = 'yyyyy'
         config.url      = 'http://www.zenvia360.com.br/GatewayIntegration/msgSms.do'
         config.log      = false
     end
